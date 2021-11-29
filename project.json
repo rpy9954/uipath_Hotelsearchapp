@@ -3,7 +3,7 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "HotelSearch": "[1.0.41]",
+    "HotelSearch": "[1.0.43]",
     "ReporterForUiPath.Activities": "[2.0.0]",
     "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.11.4]",

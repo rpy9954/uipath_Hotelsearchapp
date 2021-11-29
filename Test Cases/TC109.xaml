@@ -90,46 +90,14 @@
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.AddDays(1).ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkoutdate" />
       <Variable x:TypeArguments="x:String" Default="1 - One" Name="adultsperroom" />
       <Variable x:TypeArguments="x:String" Default="0 - None" Name="childrenperroom" />
-      <Variable x:TypeArguments="x:String" Name="F_name">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Nitu</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="l_name">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Yadav</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="b_addrss">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Subroto Park, New Delhi</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="c_card_no">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">3456875429764321</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="crd_type">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">VISA</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="mnth">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">August</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="c_vv">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">674</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="yer">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">2022</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Nitu" Name="F_name" />
+      <Variable x:TypeArguments="x:String" Default="Yadav" Name="l_name" />
+      <Variable x:TypeArguments="x:String" Default="Subroto Park, New Delhi" Name="b_addrss" />
+      <Variable x:TypeArguments="x:String" Default="3456875429764321" Name="c_card_no" />
+      <Variable x:TypeArguments="x:String" Default="VISA" Name="crd_type" />
+      <Variable x:TypeArguments="x:String" Default="August" Name="mnth" />
+      <Variable x:TypeArguments="x:String" Default="674" Name="c_vv" />
+      <Variable x:TypeArguments="x:String" Default="2022" Name="yer" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -141,6 +109,6 @@
     <h:hotel_data1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="hotel_data1_1" adlt_rooms="[adultsperroom]" check_in="[checkindate]" check_out="[checkoutdate]" chld_room="[childrenperroom]" hotel_type="[hotel]" location="[loc]" no_rooms="[nu_of_rooms]" room_type="[romm_type]" />
     <h:select_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="select_hotel1_1" />
     <h:book_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="book_hotel1_1" address="[b_addrss]" card_no="[c_card_no]" card_type="[crd_type]" cvv="[c_vv]" first_name="[F_name]" last_name="[l_name]" month="[mnth]" year="[yer]" />
-    <h:lgout sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="lgout_1" />
+    <h:lgout sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="lgout_2" />
   </Sequence>
 </Activity>
