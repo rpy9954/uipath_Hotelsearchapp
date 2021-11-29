@@ -87,7 +87,11 @@
           <Literal x:TypeArguments="x:String">Sydney</Literal>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="x:String" Name="hotel" />
+      <Variable x:TypeArguments="x:String" Name="hotel">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Hotel Creek</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="romm_type">
         <Variable.Default>
           <Literal x:TypeArguments="x:String">Standard</Literal>
@@ -95,7 +99,7 @@
       </Variable>
       <Variable x:TypeArguments="x:String" Name="nu_of_rooms">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">2 - two</Literal>
+          <Literal x:TypeArguments="x:String">2 - Two</Literal>
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkindate" />
@@ -110,6 +114,18 @@
           <Literal x:TypeArguments="x:String">0 - None</Literal>
         </Variable.Default>
       </Variable>
+      <Variable x:TypeArguments="x:String" Name="b_addrss">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Subroto Park, New Delhi</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Nitu" Name="F_name" />
+      <Variable x:TypeArguments="x:String" Default="Yadav" Name="l_name" />
+      <Variable x:TypeArguments="x:String" Default="3456875429764321" Name="c_card_no" />
+      <Variable x:TypeArguments="x:String" Default="VISA" Name="crd_type" />
+      <Variable x:TypeArguments="x:String" Default="August" Name="mnth" />
+      <Variable x:TypeArguments="x:String" Default="674" Name="c_vv" />
+      <Variable x:TypeArguments="x:String" Default="2022" Name="yer" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -120,7 +136,7 @@
     <h:login1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="login1_1" in_pswd="[pswd]" in_username="[usrnm]" />
     <h:hotel_data1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="hotel_data1_1" adlt_rooms="[adultsperroom]" check_in="[checkindate]" check_out="[checkoutdate]" chld_room="[childrenperroom]" hotel_type="[hotel]" location="[loc]" no_rooms="[nu_of_rooms]" room_type="[romm_type]" />
     <h:select_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="select_hotel1_1" />
-    <h:book_hotel1 address="{x:Null}" card_no="{x:Null}" card_type="{x:Null}" cvv="{x:Null}" digit="{x:Null}" first_name="{x:Null}" last_name="{x:Null}" month="{x:Null}" year="{x:Null}" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="book_hotel1_1" />
+    <h:book_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="book_hotel1_1" address="[b_addrss]" card_no="[c_card_no]" card_type="[crd_type]" cvv="[c_vv]" first_name="[F_name]" last_name="[l_name]" month="[mnth]" year="[yer]" />
     <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Data is same as u have selected&quot;]" />
   </Sequence>
 </Activity>

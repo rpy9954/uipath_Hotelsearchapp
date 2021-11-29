@@ -76,44 +76,21 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TC105" sap:VirtualizedContainerService.HintSize="376,756" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Nitu@123#" Name="pswd" />
       <Variable x:TypeArguments="x:String" Default="Nitu1234" Name="usrnm" />
-      <Variable x:TypeArguments="x:String" Name="loc">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Sydney</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="hotel">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Hotel Creek</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="romm_type">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Standard</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="nu_of_rooms">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">1 - One</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Sydney" Name="loc" />
+      <Variable x:TypeArguments="x:String" Default="Hotel Creek" Name="hotel" />
+      <Variable x:TypeArguments="x:String" Default="Standard" Name="romm_type" />
+      <Variable x:TypeArguments="x:String" Default="1 - One" Name="nu_of_rooms" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkindate" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.AddDays(1).ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkoutdate" />
-      <Variable x:TypeArguments="x:String" Name="adultsperroom">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">1 - One</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="childrenperroom">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">0 - None</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="1 - One" Name="adultsperroom" />
+      <Variable x:TypeArguments="x:String" Default="0 - None" Name="childrenperroom" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -121,8 +98,8 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="Test case 5" />
-    <h:login1 in_pswd="{x:Null}" in_username="{x:Null}" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="login1_1" />
-    <h:hotel_data1 adlt_rooms="{x:Null}" check_in="{x:Null}" check_out="{x:Null}" chld_room="{x:Null}" hotel_type="{x:Null}" location="{x:Null}" no_rooms="{x:Null}" room_type="{x:Null}" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="hotel_data1_1" />
+    <h:login1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="login1_1" in_pswd="[pswd]" in_username="[usrnm]" />
+    <h:hotel_data1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="hotel_data1_1" adlt_rooms="[adultsperroom]" check_in="[checkindate]" check_out="[checkoutdate]" chld_room="[childrenperroom]" hotel_type="[hotel]" location="[loc]" no_rooms="[nu_of_rooms]" room_type="[romm_type]" />
     <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[checkindate]</OutArgument>
@@ -131,7 +108,7 @@
         <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("dd/MM/yyyy")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[checkindate]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Check in date :&quot; + checkindate]" />
     <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[checkoutdate]</OutArgument>
@@ -140,6 +117,6 @@
         <InArgument x:TypeArguments="x:String">[DateTime.Now.AddDays(1).ToString(“dd/MM/yyyy”)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[checkoutdate]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Check out date :&quot; + checkoutdate]" />
   </Sequence>
 </Activity>

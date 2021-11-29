@@ -76,44 +76,21 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TC106" sap:VirtualizedContainerService.HintSize="376,528.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Nitu@123#" Name="pswd" />
       <Variable x:TypeArguments="x:String" Default="Nitu1234" Name="usrnm" />
-      <Variable x:TypeArguments="x:String" Name="loc">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Sydney</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="hotel">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Hotel Creek</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="romm_type">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Deluxe</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="nu_of_rooms">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">3 - Three</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Sydney" Name="loc" />
+      <Variable x:TypeArguments="x:String" Default="Hotel Creek" Name="hotel" />
+      <Variable x:TypeArguments="x:String" Default="Deluxe" Name="romm_type" />
+      <Variable x:TypeArguments="x:String" Default="3 - Three" Name="nu_of_rooms" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkindate" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.AddDays(1).ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkoutdate" />
-      <Variable x:TypeArguments="x:String" Name="adultsperroom">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">1 - One</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="childrenperroom">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">0 - None</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="1 - One" Name="adultsperroom" />
+      <Variable x:TypeArguments="x:String" Default="0 - None" Name="childrenperroom" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -131,6 +108,6 @@
         <InArgument x:TypeArguments="x:String">3</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[nu_of_rooms]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Number of Rooms =&quot; + nu_of_rooms]" />
   </Sequence>
 </Activity>

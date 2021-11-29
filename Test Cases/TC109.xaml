@@ -30,6 +30,14 @@
       <x:String>ReporterForUiPath.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -64,47 +72,62 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>ReporterForUiPath</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TC109" sap:VirtualizedContainerService.HintSize="376,487.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="Nitu@123#" Name="pswd" />
       <Variable x:TypeArguments="x:String" Default="Nitu1234" Name="usrnm" />
-      <Variable x:TypeArguments="x:String" Name="loc">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Sydney</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="hotel">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Hotel Creek</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="romm_type">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Standard</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="nu_of_rooms">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">2 - Two</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="checkindate">
-        <Variable.Default>
-          <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Sydney" Name="loc" />
+      <Variable x:TypeArguments="x:String" Default="Hotel Creek" Name="hotel" />
+      <Variable x:TypeArguments="x:String" Default="Standard" Name="romm_type" />
+      <Variable x:TypeArguments="x:String" Default="2 - Two" Name="nu_of_rooms" />
+      <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkindate" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.AddDays(1).ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkoutdate" />
-      <Variable x:TypeArguments="x:String" Name="adultsperroom">
+      <Variable x:TypeArguments="x:String" Default="1 - One" Name="adultsperroom" />
+      <Variable x:TypeArguments="x:String" Default="0 - None" Name="childrenperroom" />
+      <Variable x:TypeArguments="x:String" Name="F_name">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">1 - One</Literal>
+          <Literal x:TypeArguments="x:String">Nitu</Literal>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="x:String" Name="childrenperroom">
+      <Variable x:TypeArguments="x:String" Name="l_name">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">0 - None</Literal>
+          <Literal x:TypeArguments="x:String">Yadav</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="b_addrss">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Subroto Park, New Delhi</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="c_card_no">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">3456875429764321</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="crd_type">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">VISA</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="mnth">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">August</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="c_vv">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">674</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="yer">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">2022</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -117,7 +140,7 @@
     <h:login1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="login1_1" in_pswd="[pswd]" in_username="[usrnm]" />
     <h:hotel_data1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="hotel_data1_1" adlt_rooms="[adultsperroom]" check_in="[checkindate]" check_out="[checkoutdate]" chld_room="[childrenperroom]" hotel_type="[hotel]" location="[loc]" no_rooms="[nu_of_rooms]" room_type="[romm_type]" />
     <h:select_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="select_hotel1_1" />
-    <h:book_hotel1 address="{x:Null}" card_no="{x:Null}" card_type="{x:Null}" cvv="{x:Null}" digit="{x:Null}" first_name="{x:Null}" last_name="{x:Null}" month="{x:Null}" year="{x:Null}" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="book_hotel1_1" />
+    <h:book_hotel1 sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="book_hotel1_1" address="[b_addrss]" card_no="[c_card_no]" card_type="[crd_type]" cvv="[c_vv]" first_name="[F_name]" last_name="[l_name]" month="[mnth]" year="[yer]" />
     <h:lgout sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="lgout_1" />
   </Sequence>
 </Activity>

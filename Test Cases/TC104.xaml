@@ -83,33 +83,17 @@
       <Variable x:TypeArguments="x:String" Default="Nitu@123#" Name="pswd" />
       <Variable x:TypeArguments="x:String" Default="Nitu1234" Name="usrnm" />
       <Variable x:TypeArguments="x:String" Default="Sydney" Name="loc" />
-      <Variable x:TypeArguments="x:String" Name="hotel">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Hotel Creek</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="romm_type">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Standard</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="nu_of_rooms">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">1 - One</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Hotel Creek" Name="hotel" />
+      <Variable x:TypeArguments="x:String" Default="Standard" Name="romm_type" />
+      <Variable x:TypeArguments="x:String" Default="1 - One" Name="nu_of_rooms" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkindate" />
       <Variable x:TypeArguments="x:String" Default="[DateTime.Now.AddDays(1).ToString(&quot;dd/MM/yyyy&quot;)]" Name="checkoutdate" />
       <Variable x:TypeArguments="x:String" Name="adultsperroom">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">1- One</Literal>
+          <Literal x:TypeArguments="x:String">1 - One</Literal>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="x:String" Name="childrenperroom">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">0 - None</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="0 - None" Name="childrenperroom" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
