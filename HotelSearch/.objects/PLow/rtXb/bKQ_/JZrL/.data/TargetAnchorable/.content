@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="http://adactinhotelapp.com/BookingConfirm.php" ContentHash="kScddewJ_UypuDdXQ2O-5Q" DesignTimeRectangle="635, 839, 150, 45" ElementType="Button" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl id='logout' tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='logout' tag='INPUT' type='button' aaname='Logout' check:text='Logout' /&gt;" Guid="2ea7a041-a1ad-4dd7-a90b-e412db77c4fd" Reference="9TOYWozcAUyrG-8TUoHqiw/JZrLAnAEs0WOS3IuzesAgQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation' /&gt;" SearchSteps="Selector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="ImageBase64" xmlns="">0zmpqJabD6kK5ictJaD6XzA</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="acac1837e3625ddf079998a31d557577.png" xmlns="">0HKJQTx_bpU6e5Ex29JyrvA</imageRef>
-</TargetAnchorable>

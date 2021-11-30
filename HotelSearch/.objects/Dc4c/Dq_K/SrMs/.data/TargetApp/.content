@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="7-RzsUEt60yEPedSYhtduQ" Selector="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" Url="https://www.adactinhotelapp.com/" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="IconBase64" xmlns="">0J-NoD0suhUq5vOa4gdl5vQ</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="1e65338cc7df45f7ef5360cd7f4eb2cb.png" xmlns="">0gp1r9gEMPkWeBJuW-kFNHQ</imageRef>
-</TargetApp>

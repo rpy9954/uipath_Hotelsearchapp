@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="https://www.adactinhotelapp.com/" ContentHash="vpQrdkHNmkCnZxzI7GhmYQ" DesignTimeRectangle="1382, 511, 150, 45" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='Submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='Submit' aaname='Login' check:text='Login' /&gt;" Guid="67226e4a-c1e2-456c-b4b6-d7608f46624b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Reservation System' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="ImageBase64" xmlns="">0PCl2DpVP90OZub5ux2GiKQ</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="2bb98ddc240489bafb98ae4b2e10caf1.png" xmlns="">0csfNZEZIkEWXsKfQuGNqGQ</imageRef>
-</TargetAnchorable>

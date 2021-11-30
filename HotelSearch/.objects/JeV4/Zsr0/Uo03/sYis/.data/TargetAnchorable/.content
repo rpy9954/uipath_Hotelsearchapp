@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="http://adactinhotelapp.com/SelectHotel.php" ContentHash="U-kBg-cTZ0mTTu7Js4XT0A" DesignTimeRectangle="42, 631, 19, 19" ElementType="RadioButton" FriendlyName="'INPUT radiobutton_0'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='radio' aaname='' /&gt;" Guid="43d91aed-944f-4c73-89ee-68dc4ed2482c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Select Hotel' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="ImageBase64" xmlns="">0w-G9vosa6UCDXF8uYMLBqA</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="7f126a55648c9fc950dff47fc2627f8a.png" xmlns="">0eHmK0X50Q0WMtQTDE8sPxA</imageRef>
-</TargetAnchorable>
