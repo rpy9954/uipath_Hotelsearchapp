@@ -1,0 +1,13 @@
+﻿{
+  "Id": "n8rVNZ4pVkuIwuBHUeOiZw",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/n8rVNZ4pVkuIwuBHUeOiZw",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/GOKZg0Q7402LTxEoaENseg",
+  "Name": "- Select Year -",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2021-11-19T13:53:11.9269991Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-19T13:53:11.9269991Z"
+}

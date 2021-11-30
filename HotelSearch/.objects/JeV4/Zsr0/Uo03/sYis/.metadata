@@ -1,0 +1,13 @@
+﻿{
+  "Id": "sYistAIk4k67MWTsUtpXQA",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/sYistAIk4k67MWTsUtpXQA",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/Uo030thCg0qQyn5UyeoFtw",
+  "Name": "INPUT radiobutton_0",
+  "Type": "Element",
+  "TaxonomyType": "RadioButton",
+  "Created": "2021-11-19T13:39:55.3533026Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-19T13:39:55.3533026Z"
+}

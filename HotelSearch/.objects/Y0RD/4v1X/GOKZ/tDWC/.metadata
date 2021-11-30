@@ -1,0 +1,13 @@
+﻿{
+  "Id": "tDWCdXOPu0Wg2r21MIWXHA",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/tDWCdXOPu0Wg2r21MIWXHA",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/GOKZg0Q7402LTxEoaENseg",
+  "Name": "* (2)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2021-11-19T13:53:11.5270673Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-19T13:53:11.5270673Z"
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Id": "tt07EXPFvUCanimV8djtHg",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/tt07EXPFvUCanimV8djtHg",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/tAL2K5ghaEaCgmsSuJvFbA",
+  "Name": "Children per Room",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2021-11-19T13:26:13.1878586Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-19T13:26:13.1878586Z"
+}

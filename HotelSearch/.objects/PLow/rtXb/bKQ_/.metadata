@@ -1,0 +1,12 @@
+﻿{
+  "Id": "bKQ_zGoopECog41vEzcxkQ",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/bKQ_zGoopECog41vEzcxkQ",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/rtXbcgyLdk-G29yzYSAIZA",
+  "Name": "Chrome: Adactin.com - Hotel Booking Confirmation",
+  "Type": "Screen",
+  "Created": "2021-11-22T09:47:33.5509099Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-22T09:47:33.5509099Z"
+}

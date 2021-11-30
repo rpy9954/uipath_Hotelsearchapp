@@ -1,0 +1,16 @@
+﻿{
+  "Id": "JZrLAnAEs0WOS3IuzesAgQ",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/JZrLAnAEs0WOS3IuzesAgQ",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/bKQ_zGoopECog41vEzcxkQ",
+  "Name": "Logout",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2021-11-22T09:47:33.6918156Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-23T04:59:24.6850429Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

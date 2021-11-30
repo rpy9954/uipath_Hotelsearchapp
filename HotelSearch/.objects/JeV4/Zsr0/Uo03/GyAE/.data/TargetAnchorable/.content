@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="http://adactinhotelapp.com/SelectHotel.php" ContentHash="q8SWqgJSx0i5_b82V0MTLw" DesignTimeRectangle="557, 678, 150, 45" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Continue' check:text='Continue' /&gt;" Guid="4a8d0875-7cdb-455b-bfd1-63e67204c492" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Select Hotel' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0-4G3kSteAkibUIx44po-rw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="59c53f22b97b452769c9509b3135c6c2.png" xmlns="">05PvQfobYx0-mK2yvm20_Eg</imageRef>
+</TargetAnchorable>

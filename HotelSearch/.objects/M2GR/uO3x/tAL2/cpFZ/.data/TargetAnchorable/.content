@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="http://adactinhotelapp.com/SearchHotel.php" ContentHash="yjl20NMjEUSEEwO2EvYQHw" DesignTimeRectangle="245, 853, 150, 45" ElementType="Button" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Search' check:text='Search' /&gt;" Guid="a22bc0be-ccbf-4dfa-bf88-e1f6ee51b3b8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Search Hotel' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0ohsuUYGenUKrs8HGlalbJw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="e8cb66381e9a1ee5ee696d8ae5b12192.png" xmlns="">0ZoGEik0jvE-nrrEHir32Cw</imageRef>
+</TargetAnchorable>

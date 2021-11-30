@@ -1,0 +1,12 @@
+﻿{
+  "Id": "rtXbcgyLdk-G29yzYSAIZA",
+  "Reference": "9TOYWozcAUyrG-8TUoHqiw/rtXbcgyLdk-G29yzYSAIZA",
+  "ParentRef": "9TOYWozcAUyrG-8TUoHqiw/PLowGXz0ZUSlvPg6h6OWIQ",
+  "Name": "96.0.4664.45 ",
+  "Type": "AppVersion",
+  "Created": "2021-11-22T09:47:33.5439202Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-22T09:47:33.5439202Z"
+}
